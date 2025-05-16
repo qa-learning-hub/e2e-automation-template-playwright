@@ -7,7 +7,6 @@ This repository provides a robust, scalable, and maintainable foundation for End
 - [Quick Start](#quick-start)
 - [Project Structure](#project-structure)
 - [Page Object Model](#page-object-model)
-- [Project Structure](#project-structure)
 - [Continuous Integration](#continuous-integration)
 - [Best Practices](#best-practices)
 - [Useful Commands](#useful-commands)
