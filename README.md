@@ -7,7 +7,6 @@ This repository provides a robust, scalable, and maintainable foundation for End
 - [Quick Start](#quick-start)
 - [Project Structure](#project-structure)
 - [Page Object Model](#page-object-model)
-- [Running Tests](#running-tests)
 - [Project Structure](#project-structure)
 - [Continuous Integration](#continuous-integration)
 - [Best Practices](#best-practices)
@@ -17,7 +16,7 @@ This repository provides a robust, scalable, and maintainable foundation for End
 - [License](#license)
 
 ---
-
+<a name="quick-start"></a>
 ## 🚀 Quick Start
 
 ### 1. Clone the repository
@@ -42,8 +41,10 @@ npm test
 npx playwright test
 ```
 
+<a name="project-structure"></a>
 ## 📂 Project Structure
 
+```
 e2e-automation-template-playwright/
 ├── .github/
 │   └── workflows/
@@ -58,7 +59,8 @@ e2e-automation-template-playwright/
 ├── playwright.config.ts
 ├── package.json
 └── tsconfig.json
-
+```
+<a name="page-object-model"></a>
 ## 🧩 Page Object Model
 
 The project utilizes the Page Object Model (POM) design pattern to enhance readability, maintainability, and reusability of test code.
@@ -83,6 +85,7 @@ export class LoginPage {
   }
 }
 ```
+<a name="continuous-integration"></a>
 ## ⚙️ Continuous Integration
 
 CI is set up with GitHub Actions to automatically run tests on each push or pull request.
@@ -94,12 +97,14 @@ CI is set up with GitHub Actions to automatically run tests on each push or pull
 * Run tests and generate reports
 * Check the workflow file in .github/workflows/ci.yml
 
+<a name="best-practices"></a>
 ## ✅ Best Practices
 
 * Clean and Maintainable Code: ESLint and Prettier configured for consistent coding style.
 * Robust Tests: Video and screenshots on test failures for easy debugging.
 * Configurable Environments: Playwright config allows customization for different test environments.
 
+<a name="useful-commands"></a>
 ## 📚 Useful Commands
 
 | Command                    | Description                  |
@@ -110,15 +115,18 @@ CI is set up with GitHub Actions to automatically run tests on each push or pull
 | `npm run format`           | Run Prettier to format code  |
 | `npx playwright test --ui` | Open Playwright Test UI      |
 
+<a name="documentation"></a>
 ## 📖 Documentation
 
 * [Playwright Documentation](https://playwright.dev/docs/intro)
 * [TypeScript Documentation](https://playwright.dev/docs/intro)
 
+<a name="contributing"></a>
 ## 📬 Contributing
 
 Contributions are welcome! Please open a pull request or an issue to discuss potential improvements.
 
+<a name="license"></a>
 ## 📜 License
 
 This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
