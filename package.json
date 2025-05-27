@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --project=UI",
+    "test:api": "npx playwright test --project=API",
+    "report": "allure generate ./allure-results --clean -o ./allure-report && allure open ./allure-report"
   },
   "keywords": [],
   "author": "",
