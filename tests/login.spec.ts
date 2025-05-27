@@ -4,6 +4,6 @@ import { LoginPage } from '../src/pages/login.page';
 test('User can log in successfully', async ({ page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.navigate();
-  await loginPage.login('testuser', 'password123');
-  await expect(page).toHaveURL('https://example.com/dashboard');
+  await loginPage.login('student', 'Password123');
+  await expect(page).toHaveURL('https://practicetestautomation.com/logged-in-successfully/');
 });
