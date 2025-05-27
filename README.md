@@ -49,6 +49,13 @@ npm test
 npx playwright test --project="API Tests"
 ```
 
+### 5. Run Tests by Environment
+
+Environments: dev, staging, prod
+```bash
+ENV=staging npx playwright test
+```
+
 <a name="allure-reports"></a>
 ## 📊 Allure Reports
 
