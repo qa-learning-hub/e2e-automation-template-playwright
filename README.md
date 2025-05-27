@@ -5,6 +5,7 @@ This repository provides a robust, scalable, and maintainable foundation for End
 ## 📚 Table of Contents
 
 - [Quick Start](#quick-start)
+- [Allure Reports](#allure-reports)
 - [Project Structure](#project-structure)
 - [Page Object Model](#page-object-model)
 - [Continuous Integration](#continuous-integration)
@@ -32,12 +33,37 @@ npm install
 npx playwright install
 ```
 
-### 3. Run Tests
+### 3. Run UI Tests
 
 ```bash
 npm test
 # or
+npx playwright test --project="UI Tests"
+```
+
+### 4. Run API Tests
+
+```bash
+npm test
+# or
+npx playwright test --project="API Tests"
+```
+
+<a name="allure-reports"></a>
+## 📊 Allure Reports
+
+### 1. Install Dependencies
+
+```bash
+npm install --save-dev allure-playwright
+```
+
+### 2. Generate a Report
+
+```bash
 npx playwright test
+npx allure generate allure-results --clean -o allure-report
+npx allure open allure-report
 ```
 
 <a name="project-structure"></a>

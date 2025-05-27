@@ -11,4 +11,17 @@ export default defineConfig({
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
   },
+
+  projects: [
+    {
+      name: 'API Tests',
+      testMatch: /.*\.api\.spec\.ts/,
+    },
+    {
+      name: 'UI Tests',
+      testMatch: /.*\.spec\.ts/,
+    },
+  ],
+
+  reporter: [['allure-playwright']],
 });
