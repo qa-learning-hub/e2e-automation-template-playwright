@@ -73,7 +73,7 @@ npx allure open allure-report
 e2e-automation-template-playwright/
 ├── .github/
 │   └── workflows/
-│       └── ci.yml
+│       └── playwright-tests.yml
 ├── src/
 │   ├── pages/          # Page Objects
 │   └── utils/          # Utility functions and helpers
