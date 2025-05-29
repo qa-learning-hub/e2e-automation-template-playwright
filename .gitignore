@@ -6,4 +6,3 @@ dist/
 *.log
 *.lock
 coverage/
-package-lock.json
