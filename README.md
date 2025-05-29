@@ -49,13 +49,6 @@ npm test
 npx playwright test --project="API Tests"
 ```
 
-### 5. Run Tests by Environment
-
-Environments: dev, staging, prod
-```bash
-ENV=staging npx playwright test
-```
-
 <a name="allure-reports"></a>
 ## 📊 Allure Reports
 
@@ -85,6 +78,8 @@ e2e-automation-template-playwright/
 │   ├── pages/          # Page Objects
 │   └── utils/          # Utility functions and helpers
 ├── tests/              # Test spec files
+├── ui/                 # UI Test spec files
+└── api/                # API Test spec files
 ├── .eslintrc.js
 ├── .prettierrc
 ├── .gitignore
@@ -139,13 +134,14 @@ CI is set up with GitHub Actions to automatically run tests on each push or pull
 <a name="useful-commands"></a>
 ## 📚 Useful Commands
 
-| Command                    | Description                  |
-| -------------------------- | ---------------------------- |
-| `npm install`              | Install project dependencies |
-| `npm test`                 | Execute tests                |
-| `npm run lint`             | Run ESLint checks            |
-| `npm run format`           | Run Prettier to format code  |
-| `npx playwright test --ui` | Open Playwright Test UI      |
+| Command                           | Description                  |
+| -----------------------------| ---------------------------- |
+| `npm install`                | Install project dependencies |
+| `npm test`                   | Execute tests                |
+| `npm run lint`               | Run ESLint checks            |
+| `npm run format`             | Run Prettier to format code  |
+| `npx playwright test --ui`   | Open Playwright Test UI      |
+| `ENV=qa npx playwright test` | Run Tests by Environment     |
 
 <a name="documentation"></a>
 ## 📖 Documentation
